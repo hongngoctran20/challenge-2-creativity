@@ -1,0 +1,82 @@
+body {
+	font-family: Haettenschweiler;
+	color: #FFFFFF;
+	background: linear-gradient(rgba(0, 0, 0, 0.4),
+              rgba(0, 0, 0, 0.2)),
+				      url(../images/bg2.gif) no-repeat fixed;
+	background-size: cover;
+	text-align: center;
+}
+canvas {
+	font-family: 'Share Tech Mono', monospace;
+  background: radial-gradient(ellipse at center, rgba(140, 10, 60, 0.6) 0%, rgba(0, 0, 0, 0) 73%);
+  font-style: initial;
+}
+p {
+	font-size: 32px;
+	color: #A6A6A6;
+	margin-top: 10px;
+	font-family: 'Share Tech Mono', monospace;
+	margin-bottom: 10px;
+}
+
+h1 {
+	font-size: 60px;
+	margin: 0;
+	font-weight: 400;
+}
+
+h2 {
+	font-size: 40px;
+	margin: 0;
+	font-weight: 400;
+}
+
+body.light-theme {
+  background-color: #FFFFFF;
+  background-blend-mode: difference;
+	color: #333333;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+  margin-left: 30px;
+}
+.switch input {
+  display: none;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+  border-radius: 34px;
+}
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: rgba(150, 40, 60, 0.9);
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+          transform: translateX(26px);
+}

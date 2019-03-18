@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Mars Dome Space Clock</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Share+Tech+Mono" rel="stylesheet">
+</head>
+
+<body>
+	<header>
+		<h1>SPACEX SYSTEM</h1>
+		<p>Welcome on Mars. You are inside the main Dome.</p>
+		<h2>Space Clock is now running on : The Earth</h2>
+	</header>
+	<div class="switch-theme">
+		<p>Change theme</p>
+		<label class="switch">
+		 		<input type="checkbox" onchange="changeTheme(event)"/><span class="slider"></span>
+		</label>
+	</div>
+
+    <canvas class="animation"></canvas>
+
+	<footer>
+		<h2 id="day"></h2>
+		<p>Interplanetary Transport System<br>( ITS )</p>
+	</footer>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+        
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.2/TweenLite.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.2/TimelineLite.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.2/plugins/CSSPlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.2/easing/EasePack.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>
